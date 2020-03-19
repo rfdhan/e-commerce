@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en" id="home">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tester</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <!-- awesome -->
+    <script src="https://kit.fontawesome.com/1cc38b39e5.js" crossorigin="anonymous"></script>
+    <!-- slick slider -->
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <!-- font -->
+    <link href="https://fonts.googleapis.com/css?family=Lato|Open+Sans&display=swap" rel="stylesheet">
+    <!-- modifikasi -->
+    <link rel="stylesheet" href="../css/basket.css">
+    <!-- slick -->
+    <link rel="stylesheet" href="../css/slick.css">
+
+    
+</head>
+    
+<body>
+    <!-- navbar -->
+    <nav class="navbar sticky-top navbar-expand-lg">
+        <button class="navbar-toggler navbar-light" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button type="submit"><i class="fas fa-search"></i></button>
+            </form>
+            <ul class="navbar-nav ml-lg-auto navbar-light">
+                <li class="nav-item" id="lacak">
+                    <a class="nav-link" href="#job">Lacak Pesanan</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link" href="#" id="login" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Login
+                    </a>
+                    <div class="login-form">
+                        <form>
+                            <div class="username">
+                                <input type="text" name="" id="username" placeholder=" E-Mail /  Username / Nomor Handphone">
+                            </div>
+                            <div class="password">
+                                <input type="password" name="" id="password" placeholder=" Password">
+                            </div>
+                            <div class="buton">
+                                <button>Login</button>
+                            </div>
+                            <hr>
+                            <button class="facebook"><i class="fab fa-facebook"></i>Facebook</button>
+                            <button class="google"><i class="fab fa-google-plus"></i>Google</button>
+                        </form>
+                    </div>
+                </li>
+                <li class="nav-item" id="nav-daftar">
+                    <a class="nav-link" href="index.html">Daftar</a>
+                </li>
+            </ul>
+        </div>
+        <div class="icon">
+            <button type="button" data-toggle="tooltip" data-placement="bottom" title="Keranjang belanja">
+                <img src="../js/asset/bag.png" alt="bag">
+            </button>
+        </div>
+    </nav>
+
+    <!-- basket -->
+    <section id="basket">
+        <div class="container">
+            <div class="row">
+                <div class=".col-md-4" >
+                    <div class="form-row">
+                        <div class="col-sm-12" id="imageview">
+                            <img src="../js/asset/promo4.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="form-row" id="mini-view">
+                        <div class="co-sm-12">
+                            <div class="view" id="view">
+                                <div><img src="../js/asset/73x73.jpg" alt=""></div>
+                                <div><img src="../js/asset/73x73.jpg" alt=""></div>
+                                <div><img src="../js/asset/73x73.jpg" alt=""></div>
+                                <div><img src="../js/asset/73x73.jpg" alt=""></div>
+                                <div><img src="../js/asset/73x73.jpg" alt=""></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-row" id="stats">
+                        <div class="form-group col-sm-6" id="lokasi">
+                            <p>Lokasi Anda</p>
+                            <h4>DKI Jakarta, Kota Jakarta Barat, Palmerah, Slipi</h4>
+                            <a href="#"><i class="fas fa-map-marker-alt"></i> Ganti lokasi</a>
+                        </div>
+                        <div class="form-group col-sm-5" id="pengirim">
+                            <p><i class="fas fa-check-circle"></i> Ekspres</p>
+                            <h4>3-5 hari</h4>
+                        </div>
+                        
+                    </div>
+
+                    
+                </div>
+                
+                <div class="col-md-6" id="deskripsi">
+                    <div class="form-row" id="merk-hp">
+                          <div class="col-md-12">
+                              <h3>iPhone 11 Pro Max [Black Edition]</h3>
+                          </div>  
+                    </div>
+                    <div class="form-row" id="brand">
+                        <div class="form-group col-md-4">
+                            <p>146 Penilaian</p>
+                        </div>
+                        <div class="form-group col-md-4">
+                            <p>Brand</p>
+                        </div>
+                        <div class="form-row col-md-4">
+                            <p>Unit</p>
+                        </div>
+                    </div>
+                    <div class="form-row" id="brand2">
+                        <div class="form-group col-md-4">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+                        <div class="form-group col-md-4">
+                            <p>Apple</p>
+                        </div>
+                        <div class="form-group col-md-4" id="stock">
+                            <p><i class="fas fa-check-circle"></i> Tersedia</p>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="form-row">
+                        <div class="form-group col-md-3">
+                            <p>Harga</p>
+                        </div>
+                        <div class="form-group col-md-9" id="harga-hp">
+                            <p>Rp 16.000.000</p>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-3">
+                            <p>Grade Type</p>
+                        </div>
+                        <div class="form-group col-md-9" id="quality-hp">
+                            <button>Standar</button>
+                            <button>Like New</button>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-3" id="memori">
+                            <p>Memori</p>
+                        </div>
+                        <div class="form-group col-md-9">
+                            <button>32gb</button>
+                            <button>64gb</button>
+                            <button>128gb</button>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-3">
+                            <p>Warna</p>
+                        </div>
+                        <div class="form-group col-md-9" id="warna-hp">
+                            <button>Merah</button>
+                            <button>Hitam</button>
+                            <button>Ungu</button>
+                            <button>Kuning</button>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="form-row test">
+                        <div class="form-group col-md-12 text-center">
+                            <button id="belisekarang">
+                            Beli Sekarang</button>
+                            <button id="tambahkeranjang">Tambah Keranjang</button>
+                        </div>
+                    </div>
+                    <div class="form-row" id="penjelasan">
+                        <div class="form-group col-md-12">
+                            <ul class="nav nav-tabs" id="myTab" role="tablist">
+                                <li class="nav-item">
+                                    <a class="nav-link active" id="penjabaran-tab" data-toggle="tab" href="#penjabaran" role="tab" aria-controls="penjabaran" aria-selected="true">Detail</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Profile</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Contact</a>
+                                </li>
+                            </ul>
+                              <div class="tab-content" id="myTabContent">
+                                <div class="tab-pane fade show active" id="penjabaran" role="tabpanel" aria-labelledby="penjabaran-tab">Apple iPhone 11 adalah smaprthone dengan layar 6.1 inches, 90.3 cm2 (~79.0% screen-to-body ratio) Liquid Retina IPS LCD capacitive touchscreen, 16M colors 828 x 1792 pixels, Protection Scratch-resistant glass, oleophobic coating 625 nits Dolby Vision HDR10 Wide color gamut True-tone. Dibekali dengan sistem operasi iOS 13 dan chipset Apple A13 Bionic (7 nm+) serta dilengkapi dengan kamera utama dual 12 MP, f/1.8, 26mm (wide), 1/2.55 Inch, 1.4 µm, PDAF, OIS 12 MP, f/2.4, 13mm (ultrawide) dan kamera depan 12 MP, f/2.2. Untuk mendukung dayanya smartphone ini menggunakan baterai Non-removable Li-Ion 3110 mAh.
+                                </div>
+                                <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">...</div>
+                                <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">...</div>
+                              </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- close basket -->
+    <section id="update">
+        <div class="container-fluid">
+            <div class="row">
+                <h3>Terakhir dilihat</h3>
+                <div class="col-sm-12 col-12">
+                    <div class="card" style="width: 200px;">
+                        <div class="image">
+                            <a href="#"><img class="card-img-top" src="../js/asset/30 (1).gif" data-image="../js/asset/afgan.jpg" alt="product-2"></a>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Iphone 11 64GB [nano sim card]</h5>
+                            <a href="#" class="buy">Rp 12.100.000</a>
+                            <p class="card-text"><del>Rp 14.100.000</del>-32%</p>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+                    </div>
+
+                    <div class="card" style="width: 200px;">
+                        <div class="image">
+                            <a href="#"><img class="card-img-top" src="../js/asset/30 (1).gif" data-image="../js/asset/2.jpg" alt="product-2"></a>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Iphone 11 64GB [nano sim card]</h5>
+                            <a href="#" class="buy">Rp 12.100.000</a>
+                            <p class="card-text"><del>Rp 14.100.000</del>-32%</p>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+                    </div>
+
+                    <div class="card" style="width: 200px;">
+                        <div class="image">
+                            <a href="#"><img class="card-img-top" src="../js/asset/30 (1).gif" data-image="../js/asset/3.jpg" alt="product-2"></a>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Iphone 11 64GB [nano sim card]</h5>
+                            <a href="#" class="buy">Rp 12.100.000</a>
+                            <p class="card-text"><del>Rp 14.100.000</del>-32%</p>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+                    </div>
+
+                    <div class="card" style="width: 200px;">
+                        <div class="image">
+                            <a href="#"><img class="card-img-top" src="../js/asset/30 (1).gif" data-image="../js/asset/4.jpg" alt="product-2"></a>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Iphone 11 64GB [nano sim card]</h5>
+                            <a href="#" class="buy">Rp 12.100.000</a>
+                            <p class="card-text"><del>Rp 14.100.000</del>-32%</p>
+                        </div>
+                    </div>
+
+                    <div class="card" style="width: 200px;">
+                        <div class="image">
+                            <a href="#"><img class="card-img-top" src="../js/asset/30 (1).gif" data-image="../js/asset/5.jpg" alt="product-2"></a>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Iphone 11 64GB [nano sim card]</h5>
+                            <a href="#" class="buy">Rp 12.100.000</a>
+                            <p class="card-text"><del>Rp 14.100.000</del>-32%</p>
+                        </div>
+                    </div>
+
+                    <div class="card" style="width: 200px;">
+                        <div class="image">
+                            <a href="#"><img class="card-img-top" src="../js/asset/30 (1).gif" data-image="../js/asset/6.jpg" alt="product-2"></a>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Iphone 11 64GB [nano sim card]</h5>
+                            <a href="#" class="buy">Rp 12.100.000</a>
+                            <p class="card-text"><del>Rp 14.100.000</del>-32%</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="deliver" id="deliver">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-4 col-12" id="payment">
+                    <h3>Metode Pembayaran</h3>
+                    <img src="../js/asset/visa.jpg" alt="">
+                    <img src="../js/asset/mastercard.jpg" alt="">
+                    <img src="../js/asset/cod.jpg" alt="">
+                </div>
+                <div class="col-sm-4 col-12" id="jasakirim">
+                    <h3>Jasa Pengiriman</h3>
+                    <img src="../js/asset/jne.jpg" alt="">
+                    <img src="../js/asset/j&t.jpg" alt="">
+                    <img src="../js/asset/sicepat.jpg" alt="">
+                    <img src="../js/asset/ninja.jpg" alt="">
+                    <img src="../js/asset/gosend.jpg" alt="">
+                    <img src="../js/asset/grabsend.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="pstore" id="pstore">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-2 col-12" id="bantuan">
+                    <h3>Bantuan</h3>
+                    <p><a href="#">Pembayaran</a></p>
+                    <p><a href="#">Pengiriman</a></p>
+                    <p><a href="#">Status Pesanan</a></p>
+                    <p><a href="#">Pengembalian Produk</a></p>
+                    <p><a href="#">PS Store Gifaway</a></p>
+                    <p><a href="#">Hubungi Kami</a>  </p>
+                </div>
+                
+                <div class="col-sm-3 col-12" id="care">
+                    <h3>Customer Care</h3>
+                    <p><i class="fas fa-phone"></i> 0812-6608-6688</p>
+                    <p><i class="fas fa-comment-alt"></i> customer.service@pstore.com</p>
+                    <button>Saya butuh bantuan</button>
+                </div>
+
+                <div class="col-sm-2 col-12" id="kerja-sama">
+                    <h3>Kerja sama</h3>
+                    <p><a href="#">Jual HP Bekas di PStore</a></p>
+                    <p><a href="#">Jual Laptop Bekas di PStore</a></p>
+                    <p><a href="#">Jual TV Bekas di PStore</a></p>
+                </div>
+
+                <div class="col-sm-4 col-12" id="follow">
+                    <h3>Ikuti kami</h3>
+                    <a href="" class="facebook"><i class="fab fa-facebook-f fa-2x py-2"></i></a>
+                    <a href="" class="twitter"><i class="fab fa-twitter fa-2x"></i></a>
+                    <a href="" class="line"><i class="fab fa-line fa-2x"></i></a>
+                    <a href="" class="whatsapp"><i class="fab fa-whatsapp fa-2x"></i></a>
+                    <h5>Unduh aplikasi kami</h5>
+                    <button>
+                        <div class="d-flex flex-row justify-content-center">
+                            <img src="../js/asset/apple.png" alt="aple">
+                            <div class="text text-left">
+                                <p class="m-0">Download on the</p>
+                                <h4 class="m-0">App Store</h4>
+                            </div>
+                        </div>
+                    </button>
+                    <button>
+                        <div class="d-flex flex-row justify-content-center">
+                            <img src="../js/asset/gplay.png" alt="gplay">
+                            <div class="text text-left">
+                                <p class="m-0">Download on the</p>
+                                <h4 class="m-0">App Store</h4>
+                            </div>
+                        </div>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Bootstrap JS -->
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/jquery.easing.1.3.js"></script>
+    <script src="../js/slick.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="../js/asset.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <!-- slick JS -->
+    <script>
+        function init() {
+    var imgDefer = document.getElementsByTagName('img');
+    for(var i = 0;i < imgDefer.length; i++) {
+        if(imgDefer[i].getAttribute('data-image')) {
+            imgDefer[i].setAttribute('src',imgDefer[i].getAttribute('data-image'));
+        }
+    }
+}
+window.onload = init
+</script>
+    <!-- Modify JS -->
+</body>
+</html>
